@@ -5,7 +5,8 @@
 import numpy as np
 
 def random_predict(number:int=1) -> int:
-    """Рандомно угадываем число
+    """Компьютер случайным образом загадывает число от 1 (min_number) до 100 (max_number)
+       c учетом информации о том, больше или меньше случайное число нужного нам числа.
 
     Args:
         number (int, optional): Загаданное число. Defaults to 1.
@@ -13,16 +14,23 @@ def random_predict(number:int=1) -> int:
     Returns:
         int: Число попыток
     """
+    
     count = 0
+    min_number = 1
+    max_number = 100
     
     while True:
         count += 1
-        predict_number = np.random.randint(1, 101)
-        if number == predict_number:
+        predict_number = np.random.randint(min_number, max_number + 1)
+        
+        if number > predict_number:
+            min_number = predict_number
+        elif number < predict_number:
+            max_number = predict_number
+        else:
             break
-    return(count)
 
-print(f'Количество попыток: {random_predict()}')
+    return(count)
 
 
 def score_games(random_predict) -> int:
