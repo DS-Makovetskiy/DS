@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# My files and folders
+unit_tasks
+project_1/data/dst-3.0_16_1_hh_database.csv
