@@ -37,4 +37,4 @@
     * Очистка пропусков
     * Очистка выбросов
 
-:arrow_up: [к оглавлению](https://github.com/DS-Makovetskiy/DS/tree/main/project_0/README.md#Оглавление)
+:arrow_up: [к оглавлению](https://github.com/DS-Makovetskiy/DS/tree/main/project_1/README.md#Оглавление)
