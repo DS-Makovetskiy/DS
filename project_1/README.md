@@ -1,9 +1,9 @@
 # Проект 1. Анализ вакансий из HeadHunter
 
 ## Оглавление
-[1. Цель проекта](https://github.com/DS-Makovetskiy/DS/tree/main/project_1/README.md#Цель-проекта)  
-[2. Чему нас учит этот проект?](https://github.com/DS-Makovetskiy/DS/tree/main/project_1/README.md#Чему-нас-учит-этот-проект?)  
-[2. Что практикуем?](https://github.com/DS-Makovetskiy/DS/tree/main/project_1/README.md#Что-практикуем?)  
+[1. Цель проекта](#цель-проекта)  
+[2. Чему нас учит этот проект?](#чему-нас-учит-этот-проект)  
+[2. Что практикуем?](#что-практикуем)  
 
 
 ## Цель проекта
@@ -37,4 +37,4 @@
     * Очистка пропусков
     * Очистка выбросов
 
-:arrow_up: [к оглавлению](https://github.com/DS-Makovetskiy/DS/tree/main/project_1/README.md#Оглавление)
+:arrow_up: [к оглавлению](#оглавление)
