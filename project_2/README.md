@@ -1,10 +1,10 @@
 # Проект 2. Подгрузка новых данных. Уточнение анализа
 
 ## Оглавление  
-[1. Цель проекта](https://github.com/DS-Makovetskiy/DS/tree/main/project_2/README.md#Цель-проекта)  
-[2. Чему нас учит этот проект?](https://github.com/DS-Makovetskiy/DS/tree/main/project_2/README.md#Чему-нас-учит-этот-проект?)  
-[3. Этапы проекта](https://github.com/DS-Makovetskiy/DS/tree/main/project_2/README.md#Этапы-проекта)  
-[4. Критерии оценивания](https://github.com/DS-Makovetskiy/DS/tree/main/project_2/README.md#Критерии-оценивания)  
+[1. Цель проекта](#цель-проекта)  
+[2. Чему нас учит этот проект?](#чему-нас-учит-этот-проект)  
+[3. Этапы проекта](#этапы-проекта)  
+[4. Критерии оценивания](#критерии-оценивания)  
 
 
 ## Цель проекта  
@@ -34,4 +34,4 @@
     * Общий вывод в конце по результатам анализа рынка труда.
 
 
-:arrow_up: [к оглавлению](https://github.com/DS-Makovetskiy/DS/tree/main/project_2/README.md#Оглавление)
+[&#8679; к оглавлению](#оглавление)
