@@ -10,7 +10,7 @@ From the [SkillFactory Data Science course](https://skillfactory.ru/data-scienti
 * [Проект 4. ______](______)
 * [Проект 5. ______](______)
 * [Проект 6. ______](______)
-* [Итоговый проект первого года обучения. Агентство недвижимости](______)
+* [Итоговый проект первого года обучения. Агентство недвижимости](https://github.com/DS-Makovetskiy/DS/tree/main/final_project)
 
 ## Ссылка на резюме
 ...
