@@ -8,6 +8,9 @@ From the [SkillFactory Data Science course](https://skillfactory.ru/data-scienti
 * [Проект 2. Подгрузка новых данных. Уточнение анализа](https://github.com/DS-Makovetskiy/DS/tree/main/project_2)
 * [Проект 3. EDA + Feature Engineering. Соревнование на Kaggle](https://github.com/DS-Makovetskiy/DS/tree/main/project_3)
 * [Проект 4. ______](______)
+* [Проект 5. ______](______)
+* [Проект 6. ______](______)
+* [Итоговый проект первого года обучения. Агентство недвижимости](______)
 
 ## Ссылка на резюме
 ...
