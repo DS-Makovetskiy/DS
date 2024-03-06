@@ -130,5 +130,10 @@ dmypy.json
 
 # My files and folders
 unit_tasks
-Project_1_Analysis_of_vacancies_from_HeadHunter/data/dst-3.0_16_1_hh_database.csv
-Project_5_Regression_task/data/
+projects/Project_1_Analysis_of_vacancies_from_HeadHunter/data.rar
+projects/Project_3_EDA_and_Feature_Engineering/data.rar
+projects/Project_5_Regression_task/data.rar
+projects/Final_project_DS/data.rar
+projects/Final_project_DS/models.rar
+projects/Final_project_ML/data.rar
+projects/Final_project_ML/models.rar
