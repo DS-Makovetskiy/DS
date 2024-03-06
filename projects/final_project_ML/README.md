@@ -62,8 +62,8 @@ Precision@3
 
 ## Ссылки на набор данных и моделей
 
-[Набор данных](https://drive.google.com/drive/folders/1Wda3wgCcbpsxatfmprBvHhAEEuS_RatO?usp=sharing)  
-[Сохраненные модели](https://drive.google.com/drive/folders/1YA_Y_eVieRY2D_Dnjkudg5g9MrzPyccv?usp=sharing)  
+[Набор данных](https://drive.google.com/file/d/1nAQErFnOAAwkg3kQzoQ8r7nq_ztbTfVN/view?usp=drive_link)  
+[Сохраненные модели](https://drive.google.com/file/d/1nBTsTrer0sIsVwz1QSxCH9je5n_JG2zy/view?usp=drive_link)  
 [Docker образ](https://drive.google.com/file/d/1ZlIaCNslSaY07-rDM_mYzVblAUn5yjdE/view?usp=drive_link)
 
 

@@ -69,10 +69,9 @@ Linear Regression | 24.655 | 168.366
 
 ## Ссылки на наборы данных и сохраненную модель
 
-[Исходный набор данных](https://drive.google.com/file/d/1NN3ru8Qe-yIeGzFCGtMgoaxPjIIMKu37/view?usp=sharing)  
-[Обработанный набор данных](https://drive.google.com/file/d/1P-lBGvHg6D9tYO6iL0bf7hXlrI4SyWi7/view?usp=sharing)
+[Набор данных](https://drive.google.com/file/d/1n6UDdR1uLn_lGOx_cYGSF09MNi8Ruaq9/view?usp=drive_link)  
 
-[Сохраненная модель StackingRegressor](https://drive.google.com/file/d/18Na5_7uHvFkkHOTLQKIzqeDGYUZLN4F6/view?usp=sharing)
+[Сохраненная модель](https://drive.google.com/file/d/1nANDpWjc8LCxOURfZm2sG3Fwj5sCo1zu/view?usp=drive_link)
 
 
 [:arrow_up: к оглавлению](#оглавление)
