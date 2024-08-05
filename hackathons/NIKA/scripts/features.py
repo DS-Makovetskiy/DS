@@ -1,5 +1,6 @@
 import pandas as pd
 import seaborn as sns
+import scipy.stats as stats
 import matplotlib.pyplot as plt
 
 # Установка глобальных параметров
@@ -379,4 +380,63 @@ def sum_collections_per_genre(df, genres_list, feature, title, xlabel, ylabel):
     # Добавляем общие подписи осей
     fig.text(0.5, 0.33, xlabel, ha='center', va='center', fontsize=12)
     fig.text(0.04, 0.66, ylabel, ha='center', va='center', rotation='vertical', fontsize=12)
+    plt.show();
+
+
+def t_test_free_score(df):
+    free_apps = df[df['free'] == True]['score']
+    paid_apps = df[df['free'] == False]['score']
+
+    # T-тест для независимых выборок
+    t_stat, p_value = stats.ttest_ind(free_apps, paid_apps)
+    alpha = 0.05  # Уровень значимости
+
+    # Проверка уровня значимости и вывод сообщения
+    if p_value < alpha:
+        result = "Отвергаем нулевую гипотезу. Средний рейтинг бесплатных приложений статистически значимо отличается от среднего рейтинга платных приложений."
+    else:
+        result = "Принимаем нулевую гипотезу. Нет статистически значимого различия между средними рейтингами бесплатных и платных приложений."
+
+    print(f"T-statistic: {t_stat.round(4)} \nP-value: {p_value.round(4)}\n")
+
+    print(result)
+    
+
+def barplot_free_score(df, title, xlabel, ylabel):
+    plt.figure(figsize=(8, 4))
+    sns.barplot(df.groupby('free')['score'].mean());
+    plt.title(title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.ylim(0, 5)
+    plt.show();
+
+
+def chi2_stat_collection_score(df):
+    df['high_score'] = df['score'] > 4.5
+    top_grossing = df['collection'] == 'TOP_GROSSING'
+
+    # Таблица сопряженности
+    contingency_table = pd.crosstab(df['high_score'], top_grossing)
+
+    chi2_stat, p_value_chi2, _, _ = stats.chi2_contingency(contingency_table)
+    print(f"Chi2 Statistic: {chi2_stat}, \nP-value: {p_value_chi2}\n")
+
+    # Проверка уровня значимости и вывод сообщения
+    alpha = 0.05
+    if p_value_chi2 < alpha:
+        result_chi2 = "Отвергаем нулевую гипотезу. Высокий рейтинг и наличие в коллекции TOP_GROSSING зависимы."
+    else:
+        result_chi2 = "Принимаем нулевую гипотезу. Высокий рейтинг и наличие в коллекции TOP_GROSSING независимы."
+
+    print(result_chi2)
+    return contingency_table
+
+
+def heatmap_collection_score(df):
+    plt.figure(figsize=(8, 4))
+    sns.heatmap(df, annot=True, cmap='Blues', fmt='.4g', vmin=0, vmax=1600)
+    plt.title('Таблица сопряженности: Высокий рейтинг и коллекция TOP_GROSSING')
+    plt.xlabel('TOP_GROSSING')
+    plt.ylabel('Высокий рейтинг (>4.5)')
     plt.show();
