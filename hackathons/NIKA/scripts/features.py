@@ -397,7 +397,7 @@ def t_test_free_score(df):
     else:
         result = "Принимаем нулевую гипотезу. Нет статистически значимого различия между средними рейтингами бесплатных и платных приложений."
 
-    print(f"T-statistic: {t_stat.round(4)} \nP-value: {p_value.round(4)}\n")
+    print(f"T-statistic: {t_stat} \nP-value: {p_value}\n")
 
     print(result)
     
@@ -435,7 +435,7 @@ def chi2_stat_collection_score(df):
 
 def heatmap_collection_score(df):
     plt.figure(figsize=(8, 4))
-    sns.heatmap(df, annot=True, cmap='Blues', fmt='.4g', vmin=0, vmax=1600)
+    sns.heatmap(df, annot=True, cmap='Blues', fmt='.4g', vmin=0)
     plt.title('Таблица сопряженности: Высокий рейтинг и коллекция TOP_GROSSING')
     plt.xlabel('TOP_GROSSING')
     plt.ylabel('Высокий рейтинг (>4.5)')
