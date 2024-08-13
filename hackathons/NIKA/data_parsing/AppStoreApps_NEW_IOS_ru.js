@@ -19,12 +19,12 @@ const fetchData = async () => {
   const detailedApps = [];
 
   const saveDataToFile = async (apps, index) => {
-    const filePath = `../data/AppStoreApps_NEW_IOS_ru${String(index).padStart(3, '0')}.json`;
+    const filePath = `../data/AppStoreApps_NEW_IOS_ru_${String(index).padStart(3, '0')}.json`;
     fs.writeFileSync(filePath, JSON.stringify(apps, null, 2));
   };
 
   for (const category of categories) {
-    for (let page = 0; page < 50; page++) {  // 50 страниц по 200 элементов = 10000 приложений
+    for (let page = 0; page < 500; page++) {  // 50 страниц по 200 элементов = 10000 приложений
       try {
         const apps = await store.list({
           category: category,
@@ -43,8 +43,8 @@ const fetchData = async () => {
             detailedApps.push(appDetails);
             appCount++;
 
-            if (appCount % 200 === 0) {
-              await saveDataToFile(detailedApps.splice(0, 200), fileIndex);
+            if (appCount % 10000 === 0) {
+              await saveDataToFile(detailedApps.splice(0, 10000), fileIndex);
               fileIndex++;
             }
           } catch (error) {
