@@ -725,6 +725,7 @@ def free_paid_per_genre_g(df, genre_column, price_column, title, xlabel, ylabel)
     # Переименование колонок для более понятного отображения
     free_paid_counts.columns = ['Paid', 'Free'] if 'Paid' not in free_paid_counts.columns else free_paid_counts.columns
     free_paid_counts.reset_index(inplace=True)
+    free_paid_counts = free_paid_counts[['genre', 'Free', 'Paid']]
     
     # Построение гистограммы распределения бесплатных и платных игр по жанрам
     free_paid_counts.plot(x=genre_column, kind='bar', stacked=True, colormap='tab20', figsize=(12, 4))
@@ -732,7 +733,7 @@ def free_paid_per_genre_g(df, genre_column, price_column, title, xlabel, ylabel)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.xticks(rotation=45)
-    plt.legend(labels=['Платные', 'Бесплатные'])
+    plt.legend(labels=['Бесплатные', 'Платные'])
     plt.show();
 
 
